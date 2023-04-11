@@ -22,7 +22,6 @@
 		"antfu.file-nesting",
 		"EditorConfig.EditorConfig",
 		"quicktype.quicktype",
-		// "GitHub.copilot",
 		"WakaTime.vscode-wakatime",
 		"Gruntfuggly.todo-tree",
 		"GitHub.copilot-labs",
@@ -31,7 +30,10 @@
 		"esbenp.prettier-vscode",
 		"albert.TabOut",
 		"seatonjiang.gitmoji-vscode",
-		"GitHub.copilot-nightly"
+		"GitHub.copilot-nightly",
+		"stivo.tailwind-fold",
+		"bradlc.vscode-tailwindcss",
+		"austenc.tailwind-docs"
 	]
     }
   },
