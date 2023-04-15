@@ -1,5 +1,5 @@
 async function getData() {
-  const res = await fetch('https://randomuser.me/api/', { cache: 'no-store' });
+  const res = await fetch('https://randomuser.me/api/?inc=name');
   if (!res.ok) {
     throw new Error('Failed to fetch API');
   }
@@ -9,10 +9,13 @@ async function getData() {
 
 export default async function Page() {
     const data = await getData();
+    const final = data.results;
+    console.log(data);
+    console.log(final)
     return (
         <main>
-          {/* <p>{data.gender}</p> */}
-          <p>finished</p>
+          <p>{final.first}</p>
+          {/* <p>finished</p> */}
         </main>
     )
 }
